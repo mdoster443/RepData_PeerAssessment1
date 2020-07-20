@@ -75,7 +75,7 @@ hist(stepspday$stepspday , xlab='Total Steps per day' ,
         main='Frequency of Total Steps per Day' , ylim=c(0,30))
 ```
 
-![](PA1_template_files/figure-html/total steps per day-1.png)<!-- -->
+![](PA1_template_files/figure-html/total_steps_per_day-1.png)<!-- -->
 
 ```r
 #plot of frequency of total steps per day
@@ -104,7 +104,7 @@ onlystepinterval <- unique(onlystepinterval)
 plot(onlystepinterval$interval,onlystepinterval$stepspint , type='l' , ylab='Steps' , xlab='Military Time' , main='Average Steps per Interval')
 ```
 
-![](PA1_template_files/figure-html/time series plot-1.png)<!-- -->
+![](PA1_template_files/figure-html/time_series_plot-1.png)<!-- -->
 
 ```r
 #[4] plots average steps per interval (could not get type='l' to work)
@@ -142,7 +142,7 @@ hist(newstepspday$stepspday , xlab='Total Steps per day' ,
      main='Adjusted Frequency of Total Steps per Day')
 ```
 
-![](PA1_template_files/figure-html/new hist-1.png)<!-- -->
+![](PA1_template_files/figure-html/new_hist-1.png)<!-- -->
 
 ```r
 #[7] histogram of adjusted data
@@ -187,7 +187,7 @@ ggplot(dayall , aes(interval , stepspint)) + geom_line() + facet_grid(dayOfweek~
         labs(y='Steps' , title='Average Steps per Interval')
 ```
 
-![](PA1_template_files/figure-html/final plot-1.png)<!-- -->
+![](PA1_template_files/figure-html/final_plot-1.png)<!-- -->
 
 ```r
 #[8] Displays graph of average steps per interval for weekdays vs weekends
